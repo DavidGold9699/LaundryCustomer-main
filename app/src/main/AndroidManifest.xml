@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LaundryCustomer"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="31">
+        <activity
+            android:name=".controller.home.PickupLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.home.LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.home.MyServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.home.SavedLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.home.DeliveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.home.MachineInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.home.ShopInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.home.PickupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.home.DoitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controller.SplashActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".controller.login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.menu.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.LaundryCustomer.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

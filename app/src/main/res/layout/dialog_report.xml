@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:background="@color/color_green"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/img_lamp">
+            </ImageView>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_content"
+                android:textSize="16sp"
+                android:textColor="@color/white">
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/closing"
+                android:textSize="12sp"
+                android:textColor="@color/color_font_dark">
+            </TextView>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="185dp"
+                android:layout_height="52dp"
+                android:background="@drawable/btn_secondary"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/report_machine"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp">
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_red">
+
+        </View>
+        <LinearLayout
+            android:id="@+id/lay_issues"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
+                android:id="@+id/group_issues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:tbgFlow="true"
+                app:tbgChildSpacing="auto"
+                app:tbgRowSpacing="8dp">
+            </com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:id="@+id/lay_submit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/btn_secondary">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay_hide"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/btn_secondary">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hide"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

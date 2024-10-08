@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="nsoft.laundry.customer.controller.menu.ui.profile.ProfileFragment"
+        android:label="@string/my_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="nsoft.laundry.customer.controller.menu.ui.logout.LogoutFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_logout" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="nsoft.laundry.customer.controller.menu.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_receipts"
+        android:name="nsoft.laundry.customer.controller.menu.ui.receipts.ReceiptsFragment"
+        android:label="@string/e_receipts"
+        tools:layout="@layout/fragment_receipts" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="nsoft.laundry.customer.controller.menu.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+</navigation>

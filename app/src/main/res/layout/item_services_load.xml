@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/color_primary"
+    android:gravity="center_vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/img_service"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:src="@drawable/img_services_load">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_tile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Washer Dry Fold"
+            android:textColor="@color/color_dark"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 kilo"
+            android:textColor="@color/color_dark"
+            android:textSize="16sp">
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_btn_price"
+        android:layout_width="110dp"
+        android:layout_height="52dp"
+        android:background="@drawable/btn_dark_border"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/img_plus"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/icon_plus">
+        </ImageView>
+        <TextView
+            android:layout_marginStart="15dp"
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120.00"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_dark">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
